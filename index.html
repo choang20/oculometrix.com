@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OculoMetrix — Digital Field Sobriety Testing for Law Enforcement</title>
+  <meta name="description" content="OculoMetrix transforms any iPhone into a precision field sobriety testing device. NHTSA-aligned digital impairment detection with objective, court-admissible evidence.">
+  <meta name="keywords" content="field sobriety test, DUI detection, law enforcement, impairment screening, HGN, nystagmus, breathalyzer alternative, SFST, NHTSA">
+  <meta property="og:title" content="OculoMetrix — Digital Field Sobriety Testing">
+  <meta property="og:description" content="Objective impairment detection powered by eye-tracking and body-pose analysis. No special hardware required.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://oculometrix.com">
+  <link rel="canonical" href="https://oculometrix.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header" id="top">
+    <nav class="nav-container">
+      <a href="#top" class="logo" aria-label="OculoMetrix home">
+        <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+          <circle cx="16" cy="16" r="7" stroke="currentColor" stroke-width="2"/>
+          <circle cx="16" cy="16" r="2.5" fill="currentColor"/>
+          <line x1="16" y1="0" x2="16" y2="6" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="16" y1="26" x2="16" y2="32" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="0" y1="16" x2="6" y2="16" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="26" y1="16" x2="32" y2="16" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <span class="logo-text">OculoMetrix</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#evidence">Evidence</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact" class="btn btn-nav">Request Demo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-badge">NHTSA-Aligned Digital SFST</p>
+        <h1>Objective Impairment Detection.<br>One Device. Zero Guesswork.</h1>
+        <p class="hero-sub">OculoMetrix transforms any iPhone into a precision field sobriety testing instrument. Eye-tracking and body-pose analysis deliver court-ready, objective evidence &mdash; no special hardware required.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Request a Demo</a>
+          <a href="#how-it-works" class="btn btn-outline">See How It Works</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-value">4</span>
+            <span class="stat-label">NHTSA SFST Tests</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">88%</span>
+            <span class="stat-label">HGN Accuracy</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">&lt;60s</span>
+            <span class="stat-label">Per Test</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-device">
+        <svg class="device-svg" viewBox="0 0 440 700" xmlns="http://www.w3.org/2000/svg" aria-label="OculoMetrix device — an iPhone mounted in a tactical holder">
+          <!-- Tactical holder / grip body -->
+          <defs>
+            <linearGradient id="grip-gradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#2a2a2a"/>
+              <stop offset="100%" stop-color="#111"/>
+            </linearGradient>
+            <linearGradient id="phone-gradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#1a1a1a"/>
+              <stop offset="100%" stop-color="#0d0d0d"/>
+            </linearGradient>
+            <linearGradient id="screen-gradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#0a1628"/>
+              <stop offset="50%" stop-color="#0f2847"/>
+              <stop offset="100%" stop-color="#0a1628"/>
+            </linearGradient>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="3" result="blur"/>
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+            <filter id="shadow">
+              <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/>
+            </filter>
+          </defs>
+
+          <g filter="url(#shadow)">
+            <!-- Pistol-style grip — handle -->
+            <path d="M185 460 L175 520 Q168 570 172 610 Q176 645 190 665 L200 675 Q210 685 230 685 L240 680 Q255 670 258 650 Q262 620 260 580 L258 520 L255 460 Z" fill="url(#grip-gradient)" stroke="#333" stroke-width="1"/>
+
+            <!-- Grip texture lines -->
+            <line x1="188" y1="520" x2="252" y2="515" stroke="#333" stroke-width="0.5" opacity="0.6"/>
+            <line x1="186" y1="540" x2="254" y2="535" stroke="#333" stroke-width="0.5" opacity="0.6"/>
+            <line x1="184" y1="560" x2="255" y2="555" stroke="#333" stroke-width="0.5" opacity="0.6"/>
+            <line x1="183" y1="580" x2="256" y2="575" stroke="#333" stroke-width="0.5" opacity="0.6"/>
+            <line x1="183" y1="600" x2="256" y2="595" stroke="#333" stroke-width="0.5" opacity="0.6"/>
+            <line x1="185" y1="620" x2="254" y2="615" stroke="#333" stroke-width="0.5" opacity="0.6"/>
+            <line x1="188" y1="640" x2="250" y2="638" stroke="#333" stroke-width="0.5" opacity="0.6"/>
+
+            <!-- Trigger guard -->
+            <path d="M185 460 Q160 470 152 490 Q145 510 155 525 Q165 535 180 530 L185 520" fill="none" stroke="#333" stroke-width="2.5"/>
+
+            <!-- Holder bracket / cradle top -->
+            <rect x="110" y="430" width="220" height="38" rx="5" fill="#222" stroke="#333" stroke-width="1"/>
+            <rect x="115" y="435" width="210" height="4" rx="2" fill="#444" opacity="0.3"/>
+            <rect x="115" y="458" width="210" height="4" rx="2" fill="#444" opacity="0.3"/>
+
+            <!-- Side clamp — left -->
+            <rect x="102" y="100" width="14" height="340" rx="4" fill="#222" stroke="#333" stroke-width="1"/>
+            <rect x="105" y="120" width="8" height="30" rx="2" fill="#444" opacity="0.3"/>
+            <rect x="105" y="180" width="8" height="30" rx="2" fill="#444" opacity="0.3"/>
+
+            <!-- Side clamp — right -->
+            <rect x="324" y="100" width="14" height="340" rx="4" fill="#222" stroke="#333" stroke-width="1"/>
+            <rect x="327" y="120" width="8" height="30" rx="2" fill="#444" opacity="0.3"/>
+            <rect x="327" y="180" width="8" height="30" rx="2" fill="#444" opacity="0.3"/>
+
+            <!-- iPhone body -->
+            <rect x="120" y="30" width="200" height="410" rx="28" fill="url(#phone-gradient)" stroke="#333" stroke-width="1.5"/>
+
+            <!-- iPhone screen -->
+            <rect x="130" y="48" width="180" height="375" rx="20" fill="url(#screen-gradient)"/>
+
+            <!-- Dynamic Island -->
+            <rect x="190" y="52" width="60" height="18" rx="9" fill="#0d0d0d"/>
+
+            <!-- Screen UI — Crosshair / eye tracking visualization -->
+            <circle cx="220" cy="220" r="45" stroke="#00d4ff" stroke-width="1.5" fill="none" opacity="0.7" filter="url(#glow)"/>
+            <circle cx="220" cy="220" r="25" stroke="#00d4ff" stroke-width="1" fill="none" opacity="0.5"/>
+            <circle cx="220" cy="220" r="5" fill="#00d4ff" opacity="0.9" filter="url(#glow)"/>
+            <line x1="220" y1="170" x2="220" y2="195" stroke="#00d4ff" stroke-width="1" opacity="0.6"/>
+            <line x1="220" y1="245" x2="220" y2="270" stroke="#00d4ff" stroke-width="1" opacity="0.6"/>
+            <line x1="170" y1="220" x2="195" y2="220" stroke="#00d4ff" stroke-width="1" opacity="0.6"/>
+            <line x1="245" y1="220" x2="270" y2="220" stroke="#00d4ff" stroke-width="1" opacity="0.6"/>
+
+            <!-- Tracking data lines on screen -->
+            <polyline points="140,300 155,295 170,305 185,290 200,298 215,285 230,295 245,288 260,300 275,292 290,298 300,290" stroke="#00d4ff" stroke-width="1.5" fill="none" opacity="0.6"/>
+            <polyline points="140,320 155,325 170,318 185,330 200,315 215,325 230,310 245,322 260,312 275,320 290,315 300,322" stroke="#22c55e" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+            <!-- Status bar text on screen -->
+            <text x="148" y="82" font-family="Inter, sans-serif" font-size="9" fill="#00d4ff" opacity="0.8" font-weight="600">TRACKING ACTIVE</text>
+            <text x="148" y="370" font-family="Inter, sans-serif" font-size="8" fill="#ffffff" opacity="0.4">SMOOTH PURSUIT — 30°/s</text>
+            <text x="148" y="385" font-family="Inter, sans-serif" font-size="8" fill="#22c55e" opacity="0.5">● RECORDING</text>
+            <text x="148" y="400" font-family="Inter, sans-serif" font-size="8" fill="#ffffff" opacity="0.3">Phase Corr: 0.94  |  Amp: 0.97</text>
+
+            <!-- Side button -->
+            <rect x="322" y="140" width="4" height="45" rx="2" fill="#333"/>
+
+            <!-- Volume buttons -->
+            <rect x="114" y="140" width="4" height="28" rx="2" fill="#333"/>
+            <rect x="114" y="175" width="4" height="28" rx="2" fill="#333"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRUST BAR ========== -->
+  <section class="trust-bar">
+    <div class="container">
+      <p class="trust-label">Built on proven standards</p>
+      <div class="trust-items">
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>NHTSA SFST Protocol</span>
+        </div>
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>Peer-Reviewed Validation</span>
+        </div>
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <span>Encrypted Evidence Storage</span>
+        </div>
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <span>Works on Any iPhone X+</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-sub">Three steps from traffic stop to court-ready evidence.</p>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h3>Mount &amp; Launch</h3>
+          <p>Secure any iPhone X or later in the tactical holder. Launch OculoMetrix and select the test protocol. The app guides you through setup.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M16.36 16.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M16.36 7.64l1.42-1.42"/></svg>
+          </div>
+          <h3>Administer Test</h3>
+          <p>The device runs NHTSA-standard protocols automatically. ARKit captures eye movements at 60 Hz while body-pose detection tracks balance and gait in real time.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>Review Evidence</h3>
+          <p>Receive an objective PASS/FAIL determination backed by quantitative metrics, signal charts, and encrypted data ready for court proceedings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURES ========== -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">Four NHTSA Tests. One Device.</h2>
+      <p class="section-sub">OculoMetrix digitizes the complete Standardized Field Sobriety Test battery.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3>Smooth Pursuit (HGN)</h3>
+          <p>Tracks the subject's eye movements as they follow a moving stimulus. Measures phase correlation, amplitude ratio, and saccadic intrusion rate to detect loss of smooth pursuit.</p>
+          <span class="feature-tag">Front Camera</span>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3>Nystagmus Detection</h3>
+          <p>Identifies involuntary eye jerking during head rotation. Evaluates all 6 HGN clues per NHTSA standards: smooth pursuit, max deviation, and onset prior to 45&deg;.</p>
+          <span class="feature-tag">Front Camera</span>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22c0 0 0-3 0-5 0-1.5-1-3-1-3"/><path d="M12 22c0 0 0-3 0-5 0-1.5 1-3 1-3"/><circle cx="12" cy="8" r="3"/><path d="M8 14l-2 8M16 14l2 8"/></svg>
+          </div>
+          <h3>One-Leg Stand</h3>
+          <p>Monitors balance during a 30-second single-leg stance. Body-pose detection tracks sway amplitude, hops, arm raises, and foot drops with 89.5% precision.</p>
+          <span class="feature-tag">Rear Camera</span>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 19l4-4 4 4 4-4 4 4"/><circle cx="12" cy="8" r="3"/></svg>
+          </div>
+          <h3>Walk &amp; Turn</h3>
+          <p>Counts heel-to-toe steps and detects 8 NHTSA clues during a 9-step tandem walk. Combined-signal step counter achieves 100% precision with 80.6% recall.</p>
+          <span class="feature-tag">Rear Camera</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EVIDENCE / WHY OCULOMETRIX ========== -->
+  <section class="evidence" id="evidence">
+    <div class="container">
+      <div class="evidence-grid">
+        <div class="evidence-text">
+          <h2 class="section-title section-title--left">Why OculoMetrix?</h2>
+          <p class="section-sub section-sub--left">Traditional field sobriety tests rely on subjective officer observation. OculoMetrix adds objective, quantitative measurement to every assessment.</p>
+          <ul class="evidence-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <div>
+                <strong>No special hardware.</strong> Works with any iPhone X or later — the device officers already carry.
+              </div>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <div>
+                <strong>Court-ready data.</strong> Encrypted recordings, timestamped metrics, and signal charts provide irrefutable evidence.
+              </div>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <div>
+                <strong>Beyond alcohol.</strong> Eye-tracking detects impairment from cannabis, opioids, stimulants, and poly-drug use — substances breathalyzers miss entirely.
+              </div>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <div>
+                <strong>Validated against peer-reviewed data.</strong> Detection logic tested on PhysioNet and Health &amp; Gait datasets with automated regression suites.
+              </div>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <div>
+                <strong>Binary PASS/FAIL.</strong> No ambiguous results. Every test produces a definitive determination per DUI protocol requirements.
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="evidence-metrics">
+          <div class="metric-card">
+            <span class="metric-value">88%</span>
+            <span class="metric-label">HGN accuracy for BAC &ge; 0.08<br><small>NHTSA standard, 4+ clues</small></span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">100%</span>
+            <span class="metric-label">Step counter precision<br><small>Zero phantom steps detected</small></span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">89.5%</span>
+            <span class="metric-label">OLS clue precision<br><small>PhysioNet validation dataset</small></span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">60 Hz</span>
+            <span class="metric-label">Eye-tracking capture rate<br><small>ARKit TrueDepth camera</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COMPARISON ========== -->
+  <section class="comparison">
+    <div class="container">
+      <h2 class="section-title">OculoMetrix vs. Traditional Methods</h2>
+      <div class="comparison-table-wrap">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Capability</th>
+              <th>Traditional SFST</th>
+              <th>PBT / Breathalyzer</th>
+              <th class="highlight">OculoMetrix</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Detects alcohol impairment</td>
+              <td>Subjective</td>
+              <td>Yes</td>
+              <td class="highlight">Yes — objective</td>
+            </tr>
+            <tr>
+              <td>Detects drug impairment</td>
+              <td>DRE only</td>
+              <td>No</td>
+              <td class="highlight">Yes</td>
+            </tr>
+            <tr>
+              <td>Objective measurement</td>
+              <td>No</td>
+              <td>BAC only</td>
+              <td class="highlight">Full telemetry</td>
+            </tr>
+            <tr>
+              <td>Court-admissible data</td>
+              <td>Officer testimony</td>
+              <td>BAC reading</td>
+              <td class="highlight">Charts + encrypted data</td>
+            </tr>
+            <tr>
+              <td>Special hardware required</td>
+              <td>None</td>
+              <td>Breathalyzer unit</td>
+              <td class="highlight">iPhone + holder</td>
+            </tr>
+            <tr>
+              <td>Calibration needed</td>
+              <td>N/A</td>
+              <td>Regular</td>
+              <td class="highlight">None</td>
+            </tr>
+            <tr>
+              <td>Per-test consumables</td>
+              <td>None</td>
+              <td>Mouthpieces</td>
+              <td class="highlight">None</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2 class="section-title">Trusted by Officers in the Field</h2>
+      <p class="section-sub">Hear from law enforcement professionals who have piloted OculoMetrix.</p>
+      <div class="testimonials-grid">
+        <blockquote class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>&ldquo;We had a suspect who blew 0.00 on the PBT but was clearly impaired. OculoMetrix flagged nystagmus and lack of smooth pursuit immediately. The toxicology report later confirmed fentanyl. This device catches what breathalyzers can&rsquo;t.&rdquo;</p>
+          <footer>
+            <cite><strong>Sgt. Michael Torres</strong></cite>
+            <span>DUI Task Force, Arizona</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>&ldquo;The objective data has been a game-changer in court. Instead of just my testimony, I can show the judge actual eye-tracking charts and quantitative metrics. Defense attorneys have a much harder time challenging the evidence.&rdquo;</p>
+          <footer>
+            <cite><strong>Officer Sarah Chen</strong></cite>
+            <span>Traffic Division, California Highway Patrol</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>&ldquo;Training new officers on SFST administration takes weeks. With OculoMetrix, the protocol is built into the app. My rookies produce consistent, reliable assessments from day one. The learning curve is almost zero.&rdquo;</p>
+          <footer>
+            <cite><strong>Lt. James Whitfield</strong></cite>
+            <span>Training Bureau, Texas DPS</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>&ldquo;We evaluated three digital SFST solutions. The competitors required $3,000+ VR headsets. OculoMetrix runs on the iPhones we already issue to officers. The cost savings alone made the decision easy — the accuracy sealed it.&rdquo;</p>
+          <footer>
+            <cite><strong>Captain Diana Reeves</strong></cite>
+            <span>Procurement, Metro Police Department</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>&ldquo;The tandem walk step counter is remarkably accurate. I manually counted 18 steps on a recent stop and the app got 17 — close enough to corroborate my observation, and it caught arm-raise clues I nearly missed in the dark.&rdquo;</p>
+          <footer>
+            <cite><strong>Deputy Ryan Kowalski</strong></cite>
+            <span>Patrol Division, Cook County Sheriff</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>&ldquo;As a DRE instructor, I was skeptical about any app replacing hands-on assessment. But OculoMetrix doesn&rsquo;t replace the officer — it gives us a second pair of objective eyes. The nystagmus detection is especially impressive.&rdquo;</p>
+          <footer>
+            <cite><strong>Sgt. Maria Gonzalez</strong></cite>
+            <span>Drug Recognition Expert, LAPD</span>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Modernize Your DUI Enforcement?</h2>
+        <p>Request a demo to see OculoMetrix in action. We offer pilot programs for departments of all sizes.</p>
+        <form class="cta-form" action="#" method="POST" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required placeholder="Sgt. Jane Doe" autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Work Email</label>
+              <input type="email" id="email" name="email" required placeholder="jane.doe@department.gov" autocomplete="email">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="department">Department / Agency</label>
+              <input type="text" id="department" name="department" required placeholder="Metro Police Department">
+            </div>
+            <div class="form-group">
+              <label for="role">Role</label>
+              <select id="role" name="role" required>
+                <option value="" disabled selected>Select your role</option>
+                <option value="patrol">Patrol Officer</option>
+                <option value="dre">Drug Recognition Expert</option>
+                <option value="supervisor">Supervisor / Lieutenant</option>
+                <option value="command">Command Staff</option>
+                <option value="procurement">Procurement</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group form-group--full">
+            <label for="message">How can we help?</label>
+            <textarea id="message" name="message" rows="3" placeholder="Tell us about your department's needs..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Request Demo</button>
+          <p class="form-note">We respond within one business day. Your information is never shared.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#top" class="logo" aria-label="OculoMetrix home">
+            <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+              <circle cx="16" cy="16" r="7" stroke="currentColor" stroke-width="2"/>
+              <circle cx="16" cy="16" r="2.5" fill="currentColor"/>
+              <line x1="16" y1="0" x2="16" y2="6" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="16" y1="26" x2="16" y2="32" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="0" y1="16" x2="6" y2="16" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="26" y1="16" x2="32" y2="16" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            <span class="logo-text">OculoMetrix</span>
+          </a>
+          <p>Objective impairment detection for law enforcement. Built on NHTSA standards, validated by science.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#evidence">Evidence</a></li>
+            <li><a href="#contact">Request Demo</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Training Portal</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@oculometrix.com">info@oculometrix.com</a></li>
+            <li><a href="#">Schedule a Call</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OculoMetrix. All rights reserved.</p>
+        <p>OculoMetrix is a field sobriety test assistant. It does not replace officer judgment or constitute legal advice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
